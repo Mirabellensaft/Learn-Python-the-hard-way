@@ -12,7 +12,6 @@ out_file.write(in_data)
 
 out_file.close()
 
-
 # Mistakes I make:
 # Typos
 # forgot quotes

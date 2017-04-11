@@ -2,10 +2,9 @@
 # and boxes_of_crackers. prints strings containing room for numbers of things
 import random
 import sys
-from sys import argv
 from os.path import exists
 
-script, filename1, filename2, filename3 = argv
+script, filename1, filename2, filename3 = sys.argv
 
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
     print "You have %d cheeses!" % cheese_count
@@ -65,12 +64,6 @@ my_own_function(pizzas3, fries3)
 my_second_function()
 f = open(filename3, "w")
 my_own_function(33, 44, f)
-
-
-
-
-
-
 
 
 

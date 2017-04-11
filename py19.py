@@ -1,6 +1,7 @@
 # defines the function cheese_and_crackers with the arguments cheese_count
 # and boxes_of_crackers. prints strings containing room for numbers of things
 import random
+import sys
 from sys import argv
 from os.path import exists
 
@@ -33,9 +34,9 @@ cheese_and_crackers(10 + 20, 5 + 6)
 print "And we can combine the two, variables and math:"
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
-def my_own_function(number_of_pizzas, servings_of_fries):
-    print "There are %r Pizzas." % number_of_pizzas
-    print "There are %r servings of fries." % servings_of_fries
+def my_own_function(number_of_pizzas, servings_of_fries, f=sys.stdout):
+    f.write("There are %r Pizzas.\n" % number_of_pizzas)
+    f.write("There are %r servings of fries.\n\n" % servings_of_fries)
 
 def my_second_function():
     my_own_function(700, 400)
@@ -62,11 +63,10 @@ fries3 = random.choice([1, 2, 3, 4, 5])
 my_own_function(pizzas3, fries3)
 
 my_second_function()
+f = open(filename3, "w")
+my_own_function(33, 44, f)
 
-food = open(filename3, "w")
-food.write("%s") % (my_own_function(33, 44))
 
-filename3.close()
 
 
 

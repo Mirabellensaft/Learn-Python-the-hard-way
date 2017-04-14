@@ -33,6 +33,32 @@ what = add(age, subtract(height, multipy(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "Can you do it by hand?"
 
+print "Sure, let me show you!"
+
+solution = ((30 + 5)+((78 - 4)-((90 * 2) * ((100 / 2) / 2))))
+
+print "See how smart I am, look at this", solution, "!"
+
+print "Now I break the formula by deleteing all ():"
+
+solution2 = 30 + 5 + 78 - 4 - 90 * 2 * 100 / 2 / 2
+
+print solution, "is the same as", solution2, ". Because python knows math rules."
+
+solution3 = 30 * 2 + 5 * 100 + 78 / 2 - 4 / 2 - 90
+
+print solution3, "is different, because I changed the order of the terms."
+
+print "Now I will make my own formula into a function."
+
+solution4 = 24.0 + 34.0 / 100.0 - 1023.0
+
+term1 = divide(34.0, 100.0)
+term2 = add(24.0, term1)
+term3 = subtract(term2, 1023.0)
+
+print term3, "and", solution4
+
 
 # Mistakes I make:
 # Typos

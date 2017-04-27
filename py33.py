@@ -14,7 +14,24 @@ print "The numbers: "
 for num in numbers:
     print num
 
-    
+print "Study Drill"
+j = 0
+def addition(j):
+    print j
+
+addition(j)
+j += 1
+addition(j)
+j += 1
+addition(j)
+j += 1
+addition(j)
+j += 1
+addition(j)
+j += 1
+addition(j)
+j += 1
+
 # Mistakes I make:
 # Typos
 # forgot quotes

@@ -1,36 +1,25 @@
-i = 0
-numbers = []
-while i < 6:
-    print "At the top i is %d" % i
-    numbers.append(i)
-
-    i = i + 1
-
-    print "Numbers now: ", numbers
-    print "At the bottom i is %d" % i
-
-print "The numbers: "
-
-for num in numbers:
-    print num
-
 print "Study Drill"
-j = 0
-def addition(j):
-    print j
 
-addition(j)
-j += 1
-addition(j)
-j += 1
-addition(j)
-j += 1
-addition(j)
-j += 1
-addition(j)
-j += 1
-addition(j)
-j += 1
+j = 0
+zahlen = []
+
+def addition():
+    global j
+    print "Am Anfang ist j %d." % j
+    zahlen.append(j)
+    print "Jetzt die Zahlen: ", zahlen
+    j = j + 1
+    print "Am Ende ist j is %d" % j
+
+addition()
+addition()
+addition()
+addition()
+addition()
+addition()
+
+for zahl in zahlen:
+    print zahl
 
 # Mistakes I make:
 # Typos
